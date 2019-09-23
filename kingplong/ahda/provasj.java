@@ -1,5 +1,7 @@
-package ahda;
+package king;
 
-public class provasj {
-public static void main(string)
+public class genomgang {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 }

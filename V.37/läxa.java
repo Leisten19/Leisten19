@@ -1,4 +1,3 @@
-package king;
 
 import java.util.Scanner;
 
