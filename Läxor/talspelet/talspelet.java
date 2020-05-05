@@ -13,10 +13,13 @@ public class talspelet {
 		int guessLimit = 5;
 		boolean outOfGuesses = false;
 				
-		while(!guess.equals(secretnumber) && !outOfGuesses) {
-		     
+		while(guess != secretnumber && !outOfGuesses) {
+		    //d09magli 
+			//!guess.equals(secretnumber) blir den sur på för att den tycker att man inte får lov att använda .equals() för att jämföra heltal.
+			//!guess == secretnumber blir den sur på för att den inte vill först göra guess.equals(secretnumber) och sen göra ! på resultatet.
+			//Den är sur och vill att man ska använda !=.
 			if(guessCount < guessLimit){
-				System.out.println("Enter a guess: ");    
+				System.out.println("Enter a guess: ");
 			     guess = input.hasNextLine();
 	             guessCount++;
 			} else {
@@ -33,6 +36,3 @@ public class talspelet {
 		
 			
 		}
-    
-    
-
