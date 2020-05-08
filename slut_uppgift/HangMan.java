@@ -55,7 +55,7 @@ public class HangMan {
 			// Man vinner spelet om man gissar rätt ord på sina försök
 
 			// Man förlorar spelet om man inte klarar att gissa rätt ord på sina försök.
-			game_is_running = printProgress(guessed_letters, secret_word);
+			game_is_running = printProgress(guessed_letters, secret_word); //Gör det möjligt att sluta loopen i gameisrunning
 		}
 
 		
@@ -97,10 +97,7 @@ public static void PrintMenu() {
 		for (int i = 0; i < secret_word.length(); i++) {
 			// Hämta bokstav från hemliga ordet på position i
 			char letter = secret_word.charAt(i);
-			boolean guessed_correctly = guessed_letters.contains(letter + "");// ML anmärkning: Idiotiskt sidospår som
-																				// knappt har med problemet att göra.
-																				// wtf java.
-
+			boolean guessed_correctly = guessed_letters.contains(letter + "");
 			// Skriv ut bokstaven om rätt annars ett underscore
 			if (guessed_correctly) {
 				print_out_text = print_out_text + letter;
